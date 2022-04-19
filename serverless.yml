@@ -1,5 +1,5 @@
 
-service: s3-file-uploader
+service: s3s-file-uploaders
 provider:
   name: aws
   runtime: nodejs12.x
@@ -15,7 +15,7 @@ plugins:
 functions:
   s3FileUploader:
     handler: src/upload.handler
-    name: s3-file-uploader
+    name: s3s-file-uploaders
     description: A lambda handler
     timeout: 60
     memorySize: 128
